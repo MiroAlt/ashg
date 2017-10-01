@@ -1,22 +1,42 @@
 header {
+  position: relative;
 
   .logo{
-    background-color: @brand-light;
+    width: 70px;
+    position: relative;
+    bottom: -2px;
+    left: 15px;
     padding: @unit @unit 0 @unit;
 
+
     @media @tablet {
-      position: relative;
+      bottom: 0;
       left: 10%;
-      padding: 2*@unit;
-      border-bottom: @unit solid @brand-primary;
-      margin-bottom: -3*@unit;
-      width: 250px;
+      width: 150px;
     }
 
     img {
       @media @tablet {
         width: 100%;
         padding: 0 2*@unit 2*@unit 2*@unit;
+      }
+    }
+  }
+
+  .phone {
+    .display-flex();
+    .align-items(center);
+
+    a {
+
+      .font-size(2);
+      color: @brand-text;
+      text-decoration: none;
+    }
+
+    &:hover {
+      img {
+        transform: rotate(5deg);
       }
     }
   }
@@ -89,7 +109,7 @@ header {
             content: '';
             bottom: 0;
             left: 5%;
-            width: 90%;
+            width: 0;
             height: 0;
             background-color: @brand-primary;
             transition: all .2s ease-out;
@@ -98,6 +118,7 @@ header {
           &:hover, &:focus {
             &:after {
               height: 4px;
+              width: 90%;
             }
           }
         }
@@ -139,6 +160,7 @@ header {
     height: 26px;
 
     &.active{
+
       .menu-icon .line.top {
         top: 12px;
         transform: rotate(45deg);
@@ -186,6 +208,7 @@ header {
           top: 12px;
           transition-duration: 0s;
           transition-delay: 0.3s;
+          width: 23px;
         }
 
         &.bottom{
@@ -202,33 +225,44 @@ header {
       }
     }
   }
+
+  /*&:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(242,242,242,1) 80%); !* FF3.6-15 *!
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(242,242,242,1) 80%); !* Chrome10-25,Safari5.1-6 *!
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(242,242,242,1) 80%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f2f2f2',GradientType=0 ); !* IE6-9 *!
+  }*/
 }
 .header-content {
   .display-flex();
-  background: url(../img/bg-mir-winter.jpg) center/cover no-repeat;
+  background: url(../img/bg-header.jpg) 100% 30%/cover no-repeat;
   height: 400px;
-  border-top: @unit solid @brand-primary;
+  border-top: 2px solid @brand-primary;
 
   @media @tablet {
     height: 600px;
   }
 
   h1 {
-    font-family: 'robotoslab', sans-serif;
     .font-size(2.5);
-    font-weight: bold;
     letter-spacing: 2px;
-    margin: auto;
-    color: @brand-light;
+    margin: 5%;
+    color: @brand-text;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 0 0 8px rgba(150, 150, 150, 0.5);
+
     max-width: 90%;
 
     @media @tablet {
-      .font-size(5);
-      max-width: 60%;
-      margin: auto;
+      .font-size(7);
+      max-width: 40%;
+      //margin: auto;
     }
   }
 
