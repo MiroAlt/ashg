@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
-
+<header include-html="../html/include/head.html"></header>
 <head>
     <meta charset="UTF-8">
     <title>Květinářství </title>
@@ -33,76 +33,29 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
 
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src=../js/slick.min.js"></script>
+
     <link href="../css/main.css" rel="stylesheet">
 </head>
+
 <body>
+    <header include-html="../html/include/header.html"></header>
 
-    <header>
-        <div class="nav-bar">
-            <a class="logo" href="#"><img src="img/logo.svg" alt="Rychlá objendnávka květin"></a>
-            <p class="phone"><img src="../img/phone-dark.svg" alt=""><a href="tel:+420 499 896 342">+420 499 896 342</a></p>
-            <a href="#menu" class="menu-link">
-            <span class="menu-icon">
-                <span class="line top"></span>
-                <span class="line middle"></span>
-                <span class="line bottom"></span>
-            </span>
-            </a>
-            <nav id="menu" role="navigation">
-                <ul>
-                    <li><a href="#">O nás</a></li>
-                    <li><a href="#">Produkty</a></li>
-                    <li><a href="#">Prodejny</a></li>
-                    <li><a href="#">Kontact</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="header-content">
-            <h1>Květinářství & Prodej květin</h1>
-        </div>
-    </header>
+    <p class="phone"><img src="../img/phone-dark.svg" alt=""><a href="tel:+420 499 896 342">+420 499 896 342</a></p>
 
     <main>
-        <div class="container">
-            <section>
-                <h2>Úvod</h2>
-                <h3>Podtitulek k textům</h3>
-                <p>Bacon ipsum dolor amet boudin salami pork corned beef. Turkey sausage pastrami, salami venison capicola bresaola picanha short loin. Chuck jowl bacon beef prosciutto leberkas picanha landjaeger. Tongue shank tail turkey hamburger frankfurter capicola bacon chicken beef ribs pork belly doner rump jerky. Shank burgdoggen meatloaf, chuck kielbasa jowl sausage porchetta. Shankle beef meatball ball tip strip steak, tenderloin ham hock rump ribeye salami alcatra porchetta. Picanha drumstick pork frankfurter, filet mignon kielbasa swine.</p>
-            </section>
-            <section>
-                <h2>Ubytování D</h2>
-                <p>A​‌B​‌C​‌D​‌Đ​‌E​‌F​‌G​‌H​‌I​‌J​‌K​‌L​‌M​‌N​‌O​‌P​‌Q​‌R​‌S​‌Š​‌T​‌U​‌V​‌W​‌X​‌Y​‌Z​‌Ž​‌a​‌b​‌c​‌d​‌e​‌f​‌g​‌h​‌i​‌j​‌k​‌l​‌m​‌n​‌o​‌p​‌q​‌r​‌s​‌š​‌t​‌u​‌v​‌w​‌x​‌y​‌z​‌ž​‌1​‌2​‌3​‌4​‌5​‌6​‌7​‌8​‌9​‌0​‌‘​‌?​‌’​‌“​‌!​‌”​‌(​‌%​‌)​‌[​‌#​‌]​‌{​‌@​‌}​‌/​‌&​‌\​‌<​‌-​‌+​‌÷​‌×​‌=​‌>​‌®​‌©​‌$​‌€​‌£​‌¥​‌¢​‌:​‌;​‌,​‌.​‌*</p>
-            </section>
-            <section>
-                <h2>Galerie</h2>
-            </section>
-        </div>
-        <section>
-            <h2>Kontakt</h2>
-
-
-
-        </section>
-        <div class="google-map">
-            <iframe src="https://snazzymaps.com/embed/19014" width="100%" height="600px" style="border:none;"></iframe>
-        </div>
-
+        <h3>Main</h3>
     </main>
-    <footer>
-        <div class="container">
-        <div class="contact">
-            <address><img src="../img/address.svg" alt=""><span> Chata Mír, Černý Důl 180, 5439&nbsp;44</span></address>
-            <p class="phone"><img src="../img/phone.svg" alt=""><a href="tel:+420 499 896 342">+420 499 896 342</a></p>
-            <p class="mail"><img src="../img/mail.svg" alt=""><a href="mailto:hrncirskeboudy@tiscali.cz">hrncirskeboudy@tiscali.cz</a></p>
-        </div>
-        <p class="copyright">© Karol Kania</p>
-        </div>
-    </footer>
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../img/top.svg" alt=""></button>
 
 
+    <footer include-html="../html/include/sponsors.html"></footer>
+    <footer include-html="../html/include/footer.html"></footer>
     <script src="../js/main.js"></script>
+    <script>
+        includeHTML();
+    </script>
 </body>
 </html>
