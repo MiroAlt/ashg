@@ -31,12 +31,12 @@
     <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+            crossorigin="anonymous"></script>
 
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src=../js/slick.min.js"></script>
 
     <link href="../css/main.css" rel="stylesheet">
 </head>
@@ -49,13 +49,31 @@
     <main>
         <h3>Main</h3>
     </main>
+    <!--<span class="icon">
+        <svg role="img" class="svg-icon">
+            <use xlink:href="img/svg-symbols.svg#arrow-right2"></use>
+        </svg>
+    </span>-->
+
+    <div class="sponsors">
+        <div class="container">
+            <h2>Sponsors of Aberlour Strathspey Highland Games</h2>
+            <div class="slick-slider js_sponsors">
+                <div class="sponsors-item"><img src="/img/sponsors/ballindalloch_logo.png" alt="Walkers biscuits"></div>
+                <div class="sponsors-item"><img src="/img/sponsors/robertson_logo.bmp" alt="Walkers biscuits"></div>
+                <div class="sponsors-item"><img src="/img/sponsors/spey_valley_logo.jpg" alt="Walkers biscuits"></div>
+                <div class="sponsors-item"><img src="/img/sponsors/the_macallan_logo.png" alt="Walkers biscuits"></div>
+                <div class="sponsors-item"><img src="/img/sponsors/walkers_logo.png" alt="Walkers biscuits"></div>
+            </div>
+        </div>
+    </div>
 
 
-    <footer include-html="../html/include/sponsors.html"></footer>
-    <footer include-html="../html/include/footer.html"></footer>
+    <footer include-html="../html/include/footer.html" class="container-fluid"></footer>
     <script src="../js/main.js"></script>
     <script>
         includeHTML();
     </script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
 </body>
 </html>

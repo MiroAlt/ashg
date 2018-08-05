@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'playfairdisplay';
+  src: url('../../fonts/playfairdisplay-black.woff2') format('woff2'),
+  url('../../fonts/playfairdisplay-black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'playfairdisplay';
+  src: url('../../fonts/playfairdisplay-regular.woff2') format('woff2'),
+  url('../../fonts/playfairdisplay-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../../fonts/roboto.woff2') format('woff2'),
+  url('../../fonts/roboto.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+h2 {
+  .font-size(3);
+
+
+  @media @tablet {.font-size(3.4);}
+  @media @desktop {.font-size(4);}
+
+}
+
+h3 {
+  .font-size(2.8);
+
+  @media @tablet {.font-size(3);}
+  @media @desktop {.font-size(3.6);}
+}
+
+p {
+  margin-bottom: @unit;
+
+  @media @desktop {
+    .font-size(1.8);
+  }
+
+  a {
+    //color: @brand-primary;
+    text-decoration: underline;
+
+    &:hover, &:focus {
+      //color: @brand-text;
+    }
+  };
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+  .transition(all, .25s, 0s, ease-out);
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+ul {
+  li {
+    position: relative;
+    padding-left: 16px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 4px;
+    }
+
+    &:before {
+      content: "\BB";
+      display: block;
+      font-family: Poppins Semibold,sans-serif;
+      left: 0;
+      position: absolute;
+      top: -2px;
+    }
+  }
+}
